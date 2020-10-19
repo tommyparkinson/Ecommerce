@@ -1,0 +1,125 @@
+div.nav {
+  width: 100%;
+}
+
+.nav__container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.nav__menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav__menuMain {
+  display: flex;
+  align-items: center;
+}
+
+.nav__menuAccount {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  margin: 10px;
+}
+
+.nav__menuMainItem {
+  padding: 0px 20px;
+}
+
+.nav__menuAccountItem {
+  padding-left: 20px;
+}
+
+.nav__basket {
+  display: flex;
+  align-items: center;
+}
+
+.nav__basket > span {
+  margin: 5px;
+}
+
+.nav__mobileMenuIcon {
+  display: none;
+}
+
+.nav__accountMenu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.nav__menuAccount > a {
+  text-decoration: none;
+  color: black;
+}
+
+.account-menu {
+  position: absolute;
+  display: none;
+  margin-top: 30px;
+}
+
+.account-menu > a {
+  margin-top: 5px;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0px;
+}
+
+.nav__accountMenuToggle {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  z-index: 1000;
+  width: 100px;
+  padding: 10px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav__container {
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  .nav__logo {
+    margin: 5px 0px;
+  }
+
+  .nav__menu {
+    width: unset;
+  }
+
+  .nav__menuMain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 50%;
+    background-color: white;
+    flex-direction: column;
+    z-index: 100;
+    padding-top: 50px;
+    display: none;
+  }
+
+  .menuToggle {
+    display: flex !important;
+  }
+
+  .nav__menuMainItem {
+    margin-bottom: 25px;
+  }
+
+  .nav__mobileMenuIcon {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,14 @@
+.header {
+  position: relative;
+}
+
+.header__promo {
+  text-align: center;
+  background-color: #1f959c;
+  color: white;
+  padding: 5px 0px;
+}
+
+.header__nav {
+  background-color: white;
+}
